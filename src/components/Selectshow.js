@@ -41,7 +41,7 @@ const selectedLandmarkObj = ldm.find(l => l.name === selectedLdm);
 
   return (
     <div>
-      <div id="state-title">
+      <div>
       <select
       id="state"
         value={selectedSt}
@@ -53,11 +53,12 @@ const selectedLandmarkObj = ldm.find(l => l.name === selectedLdm);
           </option>
         ))}
       </select>
+      <h3 id="state-title">{selectedSt}</h3>
       <div id="state-description">
         <p>{selectedStateObj?.description}</p>
       </div>
       </div>
-      <div id="city-name">
+      <div>
       
       <select
       id="city"
@@ -70,11 +71,12 @@ const selectedLandmarkObj = ldm.find(l => l.name === selectedLdm);
           </option>
         ))}
       </select>
+      <h3 id="city-title">{selectedCt}</h3>
       <div id="city-description">
     <p>{selectedCityObj?.description}</p>
       </div>
       </div>
-     <div id="landmark-name">
+     <div>
       <select
       id="landmark"
         value={selectedLdm}
@@ -86,6 +88,7 @@ const selectedLandmarkObj = ldm.find(l => l.name === selectedLdm);
           </option>
         ))}
       </select>
+      <h3 id="landmark-title">{selectedLdm}</h3>
       <div id="landmark-description"><p>{selectedLandmarkObj?.description}</p></div>
       </div>
     </div>
