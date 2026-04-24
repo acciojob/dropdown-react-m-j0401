@@ -60,6 +60,7 @@ const selectedLandmarkObj = ldm.find(l => l.name === selectedLdm);
       <div id="city-name">
       
       <select
+      id="city"
         value={selectedCt}
         onChange={(e) => setSelectedCt(e.target.value)}
       >
@@ -75,6 +76,7 @@ const selectedLandmarkObj = ldm.find(l => l.name === selectedLdm);
       </div>
      <div id="landmark-name">
       <select
+      id="landmark"
         value={selectedLdm}
         onChange={(e) => setSelectedLdm(e.target.value)}
       >
