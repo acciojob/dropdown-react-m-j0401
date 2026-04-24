@@ -41,7 +41,7 @@ const selectedLandmarkObj = ldm.find(l => l.name === selectedLdm);
 
   return (
     <div>
-      <div id="state-name">
+      <div id="state-title">
       <select
       id="state"
         value={selectedSt}
